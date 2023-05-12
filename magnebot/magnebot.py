@@ -562,7 +562,7 @@ class Magnebot(RobotBase):
                                "type": "A_Img_Caps_Kinematic",
                                "id": self.static.avatar_id},
                               {"$type": "set_pass_masks",
-                               "pass_masks": ["_img", "_id", "_depth"],
+                               "pass_masks": ["_img"],
                                "avatar_id": self.static.avatar_id},
                               self._get_parent_avatar_command(),
                               {"$type": "enable_image_sensor",

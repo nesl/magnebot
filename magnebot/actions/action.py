@@ -76,7 +76,7 @@ class Action(ABC):
                         {"$type": "send_images",
                          "frequency": "always"},
                         {"$type": "send_camera_matrices",
-                         "frequency": "always"}]
+                         "frequency": "never"}]
         else:
             raise Exception(f"Invalid image capture option: {image_frequency}")
         return commands

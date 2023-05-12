@@ -16,7 +16,7 @@ class MoveBy(WheelMotion):
     """
 
     # The distance at which to start braking while moving.
-    _BRAKE_DISTANCE: float = 0.1
+    _BRAKE_DISTANCE: float = 0
 
     def __init__(self, distance: float, dynamic: MagnebotDynamic, collision_detection: CollisionDetection,
                  set_torso: bool, arrived_at: float = 0.1, previous: Action = None):
